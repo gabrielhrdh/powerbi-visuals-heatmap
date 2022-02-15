@@ -31,6 +31,19 @@ import {
 } from "./dataInterfaces";
 
 export const colorbrewer: IColorBrewer = <IColorBrewer>{
+    Vibrant:{
+        3 :["#5CE08A", "#FFFFC9", "#FF592B"],
+        4 :["#5CE08A", "#FF592B", "#F9BA5F", "#FF592B"],
+        5 :["#5CE08A", "#FF592B", "#FFFFC9", "#F9BA5F", "#FF592B"],
+        6 :["#5CE08A", "#FF592B", "#FF592B", "#F8D37F", "#FB9E44", "#FF592B"],
+        7 :["#5CE08A", "#FF592B", "#FF592B", "#FFFFC9", "#F8D37F", "#FB9E44", "#FF592B"],
+        8 :["#5CE08A", "#FF592B", "#FF592B", "#5CE08A", "#F9DF90", "#F9BA5F", "#FC8F3A", "#FF592B"],
+        9 :["#5CE08A", "#FF592B", "#FF592B", "#5CE08A", "#FFFFC9", "#F9DF90", "#F9BA5F", "#FC8F3A", "#FF592B"],
+        10 :["#5CE08A", "#FF592B", "#FF592B", "#FF592B", "#5CE08A", "#F9E59B", "#F8C971", "#FAAA4E", "#FD8635", "#FF592B"],
+        11 :["#5CE08A", "#FF592B", "#FF592B", "#FF592B", "#5CE08A", "#FFFFC9", "#F9E59B", "#F8C971", "#FAAA4E", "#FD8635", "#FF592B"],
+        12 :["#5CE08A", "#F9BA5F", "#FF592B", "#FF592B", "#FF592B", "#5CE08A", "#FAEAA3", "#F8D37F", "#F9BA5F", "#FB9E44", "#FE7F32", "#FF592B"],
+        13 :["#5CE08A", "#F9BA5F", "#FF592B", "#FF592B", "#FF592B", "#5CE08A", "#FFFFC9", "#FAEAA3", "#F8D37F", "#F9BA5F", "#FB9E44", "#FE7F32", "#FF592B"]
+    },
     YlGn: {
         3: ["#f7fcb9", "#addd8e", "#31a354"],
         4: ["#ffffcc", "#c2e699", "#78c679", "#238443"],
@@ -389,8 +402,10 @@ export class AxisLabelsSettings {
 
 export class GeneralSettings {
     public enableColorbrewer: boolean = true;
-    public colorbrewer: string = "Reds";
+    public colorbrewer: string = "Vibrant";
     public buckets: number = 5;
+    public minval: number = 0;
+    public maxval: number = 1;
     public gradientStart: string = "#FFFFFF";
     public gradientEnd: string = "#000000";
     public fillNullValuesCells: boolean = true;

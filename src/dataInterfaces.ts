@@ -78,6 +78,7 @@ export interface IColorArray {
 }
 
 export interface IColorBrewer {
+    Vibrant: IColorArray;
     YlGn: IColorArray;
     YlGnBu: IColorArray;
     GnBu: IColorArray;

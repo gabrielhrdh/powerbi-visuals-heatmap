@@ -55,6 +55,7 @@
         "colorbrewer": {
           "type": {
             "enumeration": [
+              { "value": "Vibrant", "displayName": "Vibrant" },
               { "value": "YlGn", "displayName": "YlGn" },
               { "value": "YlGnBu", "displayName": "YlGnBu" },
               { "value": "GnBu", "displayName": "GnBu" },
@@ -130,6 +131,20 @@
           },
           "displayName": "Buckets",
           "displayNameKey": "Visual_General_Buckets"
+        },        
+        "minVal": {
+          "type": {
+            "numeric": true
+          },
+          "displayName": "Minimum Value",
+          "displayNameKey": "minVal"
+        },        
+        "maxVal": {
+          "type": {
+            "numeric": true
+          },
+          "displayName": "Maximum Value",
+          "displayNameKey": "maxVal"
         }
       }
     },

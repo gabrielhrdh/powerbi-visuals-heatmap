@@ -387,12 +387,8 @@ export class TableHeatMap implements IVisual {
         let chartData: TableHeatMapChartData = this.converter(dataView, this.colors);
         let suppressAnimations: boolean = false;
         if (chartData.dataPoints) {
-            let minDataValue: number = d3.min(chartData.dataPoints, function (d: TableHeatMapDataPoint) {
-                return d.value as number;
-            });
-            let maxDataValue: number = d3.max(chartData.dataPoints, function (d: TableHeatMapDataPoint) {
-                return d.value as number;
-            });
+            let minDataValue: number = settings.general.minval;
+            let maxDataValue: number = settings.general.maxval;
 
             let numBuckets: number = settings.general.buckets;
             let colorbrewerScale: string = settings.general.colorbrewer;
